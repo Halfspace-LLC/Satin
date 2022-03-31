@@ -15,10 +15,13 @@ open class GenericParameter<T>: NSObject, Parameter where T: Equatable, T: Codab
         case value
     }
 
-    public init(value: T, label: String, controlType: ControlType) {
+    public init(value: T, label: String, controlType: ControlType, action: ((T) -> Void)?) {
         self.value = value
         self.label = label
         self.controlType = controlType
+        if let action = action {
+            self.actions = [action]
+        }
     }
 
     public required init(from decoder: Decoder) throws {
