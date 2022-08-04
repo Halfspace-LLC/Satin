@@ -9,7 +9,7 @@
 import SwiftUI
 import Forge
 
-struct ContentView: View {
+struct ExamplesView: View {
     var body: some View {
         ForgeView(renderer: Renderer())
     }
@@ -17,6 +17,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ExamplesView()
     }
 }

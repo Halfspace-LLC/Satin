@@ -12,7 +12,7 @@ import SwiftUI
 struct SatinExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ExamplesView()
                 .ignoresSafeArea()
         }.windowStyle(HiddenTitleBarWindowStyle())
     }
