@@ -9,9 +9,28 @@
 import SwiftUI
 import Forge
 
+struct MasterView: View {
+    var body: some View {
+        Form {
+            Group {
+                NavigationLink("2D", destination: ForgeView(renderer: Renderer()).ignoresSafeArea())
+            }
+        }
+    }
+}
+
+struct DetailView: View {
+    var body: some View {
+        Text("Satin")
+    }
+}
+
 struct ExamplesView: View {
     var body: some View {
-        ForgeView(renderer: Renderer())
+        NavigationView {
+            MasterView()
+            DetailView()
+        }.navigationViewStyle(DoubleColumnNavigationViewStyle())
     }
 }
 
