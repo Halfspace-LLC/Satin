@@ -25,6 +25,10 @@
 		29F3F476289B454B007936F0 /* Satin in Frameworks */ = {isa = PBXBuildFile; productRef = 29F3F475289B454B007936F0 /* Satin */; };
 		29F3F478289B4565007936F0 /* Forge in Frameworks */ = {isa = PBXBuildFile; productRef = 29F3F477289B4565007936F0 /* Forge */; };
 		29F3F47A289B456E007936F0 /* Forge in Frameworks */ = {isa = PBXBuildFile; productRef = 29F3F479289B456E007936F0 /* Forge */; };
+		29F3F47B289B4A21007936F0 /* Renderer3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F1B32724BAA93300563923 /* Renderer3D.swift */; };
+		29F3F47C289B4A22007936F0 /* Renderer3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F1B32724BAA93300563923 /* Renderer3D.swift */; };
+		29F3F47D289B4A26007936F0 /* RendererCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144FA2D24D0D5550072D456 /* RendererCamera.swift */; };
+		29F3F47E289B4A26007936F0 /* RendererCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144FA2D24D0D5550072D456 /* RendererCamera.swift */; };
 		2B359BBD132F738E8AD3B4FF /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		4113FEBC49A03D2E3ABDC99B /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		412C5F430898DA02B35A8A2A /* (null) in Frameworks */ = {isa = PBXBuildFile; };
@@ -3456,7 +3460,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				29F3F467289B4435007936F0 /* ExamplesView.swift in Sources */,
+				29F3F47B289B4A21007936F0 /* Renderer3D.swift in Sources */,
 				29F3F471289B44FC007936F0 /* Renderer2D.swift in Sources */,
+				29F3F47D289B4A26007936F0 /* RendererCamera.swift in Sources */,
 				29F3F465289B4435007936F0 /* SatinExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3466,7 +3472,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				29F3F468289B4435007936F0 /* ExamplesView.swift in Sources */,
+				29F3F47C289B4A22007936F0 /* Renderer3D.swift in Sources */,
 				29F3F472289B44FC007936F0 /* Renderer2D.swift in Sources */,
+				29F3F47E289B4A26007936F0 /* RendererCamera.swift in Sources */,
 				29F3F466289B4435007936F0 /* SatinExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4020,6 +4028,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.hi-rez.SatinExample";
 				PRODUCT_NAME = SatinExample;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG NEW_EXAMPLE_APP";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4051,6 +4060,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.hi-rez.SatinExample";
 				PRODUCT_NAME = SatinExample;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = NEW_EXAMPLE_APP;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4081,6 +4091,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.hi-rez.SatinExample";
 				PRODUCT_NAME = SatinExample;
 				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG NEW_EXAMPLE_APP";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -4109,6 +4120,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.hi-rez.SatinExample";
 				PRODUCT_NAME = SatinExample;
 				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = NEW_EXAMPLE_APP;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};

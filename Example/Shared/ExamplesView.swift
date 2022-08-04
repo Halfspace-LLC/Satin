@@ -13,7 +13,9 @@ struct MasterView: View {
     var body: some View {
         Form {
             Group {
-                NavigationLink("2D", destination: ForgeView(renderer: Renderer()).ignoresSafeArea())
+                NavigationLink("2D", destination: ForgeView(renderer: Renderer2D()).ignoresSafeArea())
+                NavigationLink("3D", destination: ForgeView(renderer: Renderer3D()).ignoresSafeArea())
+                NavigationLink("Camera", destination: ForgeView(renderer: RendererCamera()).ignoresSafeArea())
             }
         }
     }

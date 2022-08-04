@@ -12,7 +12,7 @@ import MetalKit
 import Forge
 import Satin
 
-class Renderer: Forge.Renderer {
+class RendererCamera: Forge.Renderer {
     var gridInterval: Float = 1.0
 
     lazy var grid: Object = {
@@ -114,3 +114,7 @@ class Renderer: Forge.Renderer {
         renderer.resize(size)
     }
 }
+
+#if !NEW_EXAMPLE_APP
+typealias Renderer = RendererCamera
+#endif

@@ -12,7 +12,7 @@ import MetalKit
 import Forge
 import Satin
 
-class Renderer: Forge.Renderer {
+class Renderer2D: Forge.Renderer {
     var context: Context!
     
     #if os(macOS) || os(iOS)
@@ -117,3 +117,7 @@ class Renderer: Forge.Renderer {
         #endif
     }
 }
+
+#if !NEW_EXAMPLE_APP
+typealias Renderer = Renderer2D
+#endif
