@@ -7,11 +7,11 @@
 //
 
 import SwiftUI
+import Forge
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ForgeView(renderer: Renderer())
     }
 }
 
