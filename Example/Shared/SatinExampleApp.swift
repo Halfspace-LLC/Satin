@@ -14,6 +14,9 @@ struct SatinExampleApp: App {
         WindowGroup {
             ExamplesView()
                 .ignoresSafeArea()
-        }.windowStyle(HiddenTitleBarWindowStyle())
+        }
+        #if os(macOS)
+        .windowStyle(HiddenTitleBarWindowStyle())
+        #endif
     }
 }
